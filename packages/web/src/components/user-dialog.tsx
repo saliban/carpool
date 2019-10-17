@@ -190,6 +190,7 @@ export const UserDialog: FunctionComponent<IUserDialogProps> = props => {
                             onChange={e => setState({ ...state, email: e.target.value })}
                             variant="outlined"
                             margin="normal"
+                            
                         />
                         {state.error && (
                             <Typography className={classes.error}>{state.error}</Typography>
@@ -239,6 +240,7 @@ export const UserDialog: FunctionComponent<IUserDialogProps> = props => {
                             onChange={e => setState({ ...state, email: e.target.value })}
                             variant="outlined"
                             margin="normal"
+                            autoFocus= {true}
                         />
                         <TextField
                             label="Password"
